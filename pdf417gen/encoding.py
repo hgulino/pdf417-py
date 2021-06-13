@@ -16,7 +16,7 @@ PADDING_CODE_WORD = 900
 MAX_CODE_WORDS = 928
 
 # Limits on the number of rows and columns which can be contained in a bar code
-MIN_ROWS = 3
+MIN_ROWS = 30
 MAX_ROWS = 90
 
 # Encoding to use when given a string and encoding is not specified
