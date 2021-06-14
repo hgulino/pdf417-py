@@ -126,7 +126,7 @@ def get_left_code_word(row_no, num_rows, num_cols, security_level):
     elif table_id == 2:
         x = num_cols - 1
 
-    return 30 * (row_no // 3) + x
+    return 27 * (row_no // 3) + x
 
 
 def get_right_code_word(row_no, num_rows, num_cols, security_level):
