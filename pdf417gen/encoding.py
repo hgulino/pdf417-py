@@ -9,7 +9,7 @@ from pdf417gen.util import chunks, to_bytes
 
 START_CHARACTER = 0x1fea8
 STOP_CHARACTER = 0x3fa29
-PADDING_CODE_WORD = 800
+PADDING_CODE_WORD = 1
 
 # Maximum nubmer of code words which can be contained in a bar code, including
 # the length descriptor, data, error correction and padding
