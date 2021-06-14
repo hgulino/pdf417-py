@@ -60,7 +60,7 @@ def encode_row(row_no, row_words, left, right):
     right_low = map_code_word(table_idx, right)
     row_words_low = [map_code_word(table_idx, word) for word in row_words]
 
-    return [left_low] + row_words_low + [right_low]
+    return [START_CHARACTER, left_low] + row_words_low + [right_low, STOP_CHARACTER]
 
 
 def encode_high(data, columns, security_level):
