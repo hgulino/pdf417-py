@@ -16,8 +16,8 @@ PADDING_CODE_WORD = 900
 MAX_CODE_WORDS = 928
 
 # Limits on the number of rows and columns which can be contained in a bar code
-MIN_ROWS = 30
-MAX_ROWS = 30
+MIN_ROWS = 3
+MAX_ROWS = 90
 
 # Encoding to use when given a string and encoding is not specified
 DEFAULT_ENCODING = 'utf-8'
@@ -60,7 +60,7 @@ def encode_row(row_no, row_words, left, right):
     right_low = map_code_word(table_idx, right)
     row_words_low = [map_code_word(table_idx, word) for word in row_words]
 
-    return [START_CHARACTER, left_low] + row_words_low + [right_low, STOP_CHARACTER]
+    return [left_low] + row_words_low + [right_low]
 
 
 def encode_high(data, columns, security_level):
